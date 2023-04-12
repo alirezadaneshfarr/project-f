@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+form{
+   margin: 50px 25px;
+    .name, .email, .pass, .confirm{
+        margin: 70px 50px;
+        width: 100%;
+        .error{
+            position: relative;
+            top: 68px;
+            right: 150px;
+            font-size: 12px;
+            transition: 0.2s;
+            animation: errorGradient 5s ease infinite;
+        }
+    }
+}
+
+.momSide{
+    background-color: #fff;
+    width: 20%;
+    height: 80vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 12px;
+    h2{
+       position: relative;
+       top: 20px;
+    }
+}
+
+button{
+    all: unset;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    left: 40%;
+    right: 80%;
+    top: 20px;
+    animation: gradient 5s ease infinite;
+}
+.gir{
+    transition: 0.3s;
+}
+.gir:hover{
+    transform: scale(1.4);
+}
+.check{
+    position: relative;
+    left: 35px;
+}
+
+.log{
+    position: relative;
+    left: 50px;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-color: rgba(101,0,94,1);
+    }
+    50% {
+       background-color: rgba(60,132,206,1);
+    }
+    75% {
+        background-color: rgba(255,25,25,1);
+    }
+    100% {
+        background-color: rgba(48,238,226,1);
+    }
+}
+
+
+@keyframes errorGradient {
+    0% {
+        color: rgba(101,0,94,1);
+    }
+    50% {
+       color: rgba(60,132,206,1);
+    }
+    75% {
+        color: rgba(255,25,25,1);
+    }
+    100% {
+        color: rgba(48,238,226,1);
+    }
+}
